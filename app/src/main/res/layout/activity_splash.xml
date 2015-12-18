@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasonjohn.videosplashdemo.SplashActivity"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+
+    <com.jasonjohn.videosplash.VideoSplashView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoSplashView"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:layout_marginRight="30dp"
+        fancy:fb_defaultColor="@android:color/transparent"
+        fancy:fb_focusColor="@android:color/transparent"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_borderColor="#fff"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="LOGIN"
+        fancy:fb_textSize="30sp"
+        fancy:fb_fontIconSize="30dp"
+        fancy:fb_textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="V I D E O  S P L A S H"
+        android:id="@+id/textView"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+</RelativeLayout>
