@@ -121,6 +121,7 @@ public class VideoSplashView extends TextureView implements TextureView.SurfaceT
         if (mMediaPlayer == null) {
             mMediaPlayer = new MediaPlayer();
             mMediaPlayer.setVolume(0,0);
+            mMediaPlayer.setLooping(true);
         } else {
             mMediaPlayer.reset();
         }

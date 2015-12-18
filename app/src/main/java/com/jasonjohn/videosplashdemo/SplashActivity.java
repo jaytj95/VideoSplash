@@ -27,7 +27,6 @@ public class SplashActivity extends AppCompatActivity {
 
         splashVideo = (VideoSplashView) findViewById(R.id.videoSplashView);
         splashVideo.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.tunnel_splash_video));
-        splashVideo.setLooping(true);
         splashVideo.play();
 
         button = (FancyButton) findViewById(R.id.button);
